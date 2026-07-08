@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>DomeStick</title>
+        <link rel="stylesheet" href="adash_style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    </head>
+    <body>
+        <div class="containers">
+          <nav>
+              <ul>
+                <li>
+                  <h1 class="nav-items">   </h1>
+                </li>
+                
+                  <li>
+                    <h1 class="nav-items">Dashboard</h1>
+                  </li>
+                  <li>
+                    <h1 class="nav-items">  </h1>
+                  </li>
+                  <li>
+                    <h1 class="nav-items">  </h1>
+                  </li>
+                  <li><a href="../main/index.html">
+                    <i class="fas fa-home"></i>
+                    <span class="nav-item">Home</span>
+                  </a></li>
+                  <li><a href="../admin_dashboard/feedbacks/display.php">
+                    <i class="fas fa-solid fa-message"></i>
+                    <span class="nav-item">Feedback</span>
+                  </a></li>
+                  <li><a href="../admin_dashboard/orders/index.php">
+                    <i class="fas fa-regular fa-cart-arrow-down"></i>
+                    <span class="nav-item">Orders</span>
+                  </a></li>
+                  <li><a href="../admin_dashboard/logout.php" class="logout">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span class="nav-item">Logout</span>
+                  </a></li>
+              </ul>
+          </nav>
+            <div class="container">
+                <div class="header">
+                    <div class="nav">
+                        <div class="search">
+                           <input type="text" placeholder="Search...">
+                           <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                        <div class="user-wrappers">
+                        <p>Welcome, <br>Admin</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                  <div class="content-2">
+                    <div class="recent-payments">
+                      <div class="title">
+                          <h2>View the Services</h2>
+                      </div>
+
+                      <table>
+                          <tr>
+                              <td><img src="../admin_dashboard/images/cleaners.jpg" alt=""></td>
+                              <td>Cleaning Services</td>
+                              <td></td> 
+                              <td><a href="../admin_dashboard/clean_bookings/display.php" class="btn">View</a></td>
+                          </tr>
+                          <tr>
+                              <td><img src="../admin_dashboard/images/plumber.webp" alt=""></td>
+                              <td>Plumbing Services</td>
+                              <td></td>
+                              <td><a href="../admin_dashboard/plumbing_book/display.php" class="btn">View</a></td>
+                          </tr>
+                          <tr>
+                              <td><img src="../admin_dashboard/images/bbsitting.jpg" alt=""></td>
+                              <td>BabySitting Services</td>
+                              <td></td>
+                              <td><a href="../admin_dashboard/babysitting_book/display.php" class="btn">View</a></td>
+                          </tr>
+                          <tr>
+                              <td><img src="../admin_dashboard/images/electric.webp" alt=""></td>
+                              <td>Electrical Services</td>
+                              <td></td>
+                              <td><a href="../admin_dashboard/electric_booking/display.php" class="btn">View</a></td>
+                          </tr>
+                      </table>
+                  </div>
+                  </div>
+                </div>
+            </div>
+        </div>  
+    </body> 
+</html>

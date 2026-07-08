@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: #ffffff;
+}
+.containers{
+    display: flex;
+}
+nav{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    left: 0;
+    background: #b9b9f4;
+    width: 280px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.logo{
+    text-align: center;
+    display: flex;
+    margin: 10px 0 0 10px;
+}
+.logo span{
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 25px;
+}
+
+a{
+    position: relative;
+    color: #7878ea;
+    font-size: 14px;
+    display: table;
+    width: 280px;
+    padding: 10px;
+}
+
+nav .fas{
+       position: relative;
+       width: 70px;
+       height: 40px;
+       top: 14px;
+       font-size: 20px;
+       text-align: center;
+       color: #ffffff;
+}
+
+.nav-item:hover{
+    color: #503dfb;
+    transition: all  ease;
+  }
+
+.nav-items{
+      position: relative;
+      top: 12px;
+      margin-left: 10px;
+      color: #ffffff;
+      text-align: center;
+}
+
+.nav-item{
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+    color: #ffffff;
+}
+
+
+.logout{
+    position: absolute;
+    bottom: o;
+}
+
+.container .header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 81.7vw;
+    height: 10vh;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.container .header .nav {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    
+}
+.container .header .nav .search {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+}
+.container .header .nav .search input[type=text] {
+    border: none;
+    background: #efeff2;
+    padding: 10px;
+    width: 50%;
+}
+.container .header .nav .search button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .content .content-2 {
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.container .content .content-2 .recent-payments {
+    min-height: 50vh;
+    flex: 5;
+    background: rgb(255, 255, 255);
+    margin: 0 25px 25px 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media screen and (max-width: 1050px) {
+    .side-menu li {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 940px) {
+    .side-menu li span {
+        display: none;
+    }
+    .side-menu {
+        align-items: center;
+    }
+    .side-menu li img {
+        width: 40px;
+        height: 40px;
+    }
+    .side-menu li:hover {
+        background: #b9b9f4;
+        padding: 8px 38px;
+        border: 2px solid rgb(255, 255, 255);
+    }
+}
+@media screen and (max-width:536px) {
+    .brand-name h1 {
+        font-size: 16px;
+    }
+    .container .content .cards {
+        justify-content: center;
+    }
+    .side-menu li img {
+        width: 30px;
+        height: 30px;
+    }
+    .container .content .content-2 .recent-payments table th:nth-child(2),
+    .container .content .content-2 .recent-payments table td:nth-child(2) {
+        display: none;
+    }
+}
+
+.container {
+    position: absolute;
+    right: 0;
+    width: 80vw;
+    height: 100vh;
+    background: #ffffff;
+    padding: 120px;
+    padding-top: 200px;
+}
+
+.btn {
+    background: #b9b9f4;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    
+}
+.btn:hover {
+    color: #b9b9f4;
+    background: white;
+    padding: 3px 8px;
+    border: 2px solid #b9b9f4;
+}
+
+.recent-payments img{
+    height: 90px;
+    width: 90px;
+}
+
+.content .content-2 .recent-payments .title{
+    text-align: center;
+    height: 70px;
+    padding-top: 20px;
+    background-color: #b9b9f4;
+    color: #ffffff
+}
+
+
+
+
+
+

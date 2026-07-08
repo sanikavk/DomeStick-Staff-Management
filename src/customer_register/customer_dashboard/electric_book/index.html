@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="container">
+    <header>Booking Form for Electrical Services</header>
+    <form action="submit.php" method="post" class="form">
+      <div class="input-box">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter full name" name="name" required>
+      </div>
+      <div class="column">
+        <div class="input-box">
+          <label>Date</label>
+          <input type="date" placeholder="Enter the date" required name="date" />
+        </div>
+       <div class="input-box">
+         <label>Time</label>
+         <input type="time" placeholder="Enter the Time" required name="time" />
+        </div>
+      </div>
+      <div class="gender-box">
+        <h3>Do you want the staff to be equipped with the tools?</h3>
+        <div class="gender-option">
+          <div class="gender">
+            <input type="radio" id="check-male" name="equip" value="no" checked>
+            <label for="check-male">No</label>
+          </div>
+          <div class="gender">
+            <input type="radio" id="check-female" name="equip" value="yes">
+            <label for="check-female">Yes (extra charges will be applied!)</label>
+          </div>
+        </div>
+      </div>
+      <div class="ta">
+        <label>Address</label>
+        <textarea placeholder="Enter your Message" cols="75" rows="6" name="address" required></textarea>
+      </div>
+      <button type="submit" name="reg_user">Submit</button>
+    </form>
+  </section>
+</body>
+</html>

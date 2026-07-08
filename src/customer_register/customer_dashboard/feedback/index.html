@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <header>Feedback Form</header>
+      <form action="submit.php" method="post" class="form">
+        <div class="input-box">
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter full name" required name="name" />
+        </div>
+        <div class="column">
+          <div class="input-box">
+            <label>Phone Number</label>
+            <input type="tel" name="phno" name="phone" maxlength="10" pattern="[6-9]{1}[0-9]{9}" placeholder="Enter your number" required>
+          </div>
+         <div class="input-box">
+           <label>Email Address</label>
+           <input type="text" placeholder="Enter email address" required name="email" />
+          </div>
+        </div>
+        <div class="ta">
+          <label style="color: #333;">Feedback/Queires</label>
+          <textarea placeholder="Enter your Message"  cols="75" rows="10" name="fdback"></textarea>
+        </div>
+        <button name="reg_user">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
